@@ -1,0 +1,5 @@
+What are the colors of the rainbow?(in lowercase),red,orange,yellow,green,blue,purple
+What are the most crowded 6 cities of the Turkey?(in lowercase),istanbul,ankara,izmir,bursa,antalya,adana
+What are the first 6 prime numbers?(in lowercase),2,3,5,7,11,13
+What are the basic parts of a computer?(abbrevations in lowercase),mb,cpu,gpu,ram,psu,hdd
+What are the names of the most popular scientists?(in lowercase),albert einstein,isaac newton,charles darwin,nikola tesla,galileo galilei,marie curie

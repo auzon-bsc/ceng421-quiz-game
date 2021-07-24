@@ -1,0 +1,27 @@
+// COMPILE SOURCE CODES
+
+gcc multiProcessServer.c -o multiProcessServer
+gcc multiThreadedServer.c -o multiThreadedServer -lpthread
+gcc testClient.c -o testClient
+
+// 1- multiProcessServer
+
+sudo ./multiProcessServer       // sudo needed for privilage dropping
+./testClient 5
+
+cat /var/log/syslog | grep multiProcessServer
+ps -ajx | grep multiProcessServer
+id -u nopriv
+id -u auzon
+sudo kill -TERM <process_id>
+
+// 2- multiThreadedServer
+
+sudo ./multiThreadedServer      // sudo needed for privilage dropping
+./testClient 5
+
+cat /var/log/syslog | grep multiThreadedServer
+ps -ajx | grep multiThreadedServer
+id -u nopriv
+id -u auzon
+sudo kill -TERM <process_id>
